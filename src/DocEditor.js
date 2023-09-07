@@ -15,8 +15,8 @@ const DocEditor = () => {
         <div className="MadLib">
             <h1 className="Doc-title">Employment Contract</h1>
             <h4 className="Doc-subtitle">Fill in the blanks below to add to the Employment Contract</h4>
-            <DocEditorForm getSongWords={getDocWords} />
-            <EmploymentContract storyWords={words} />
+            <DocEditorForm getDocWords={getDocWords} />
+            <EmploymentContract docWords={words} />
         </div>
     )
 }
