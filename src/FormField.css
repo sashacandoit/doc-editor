@@ -1,0 +1,19 @@
+.FormField {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 550px;
+}
+
+.FormField-label {
+    width: 150px;
+    float: left;
+    font-weight: bold;
+}
+
+.FormField-input {
+    width: 390px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+

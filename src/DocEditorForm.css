@@ -1,0 +1,18 @@
+.MadLibForm {
+    width: 550px;
+    float: left;
+}
+
+.MadLibForm-btn {
+    float: right;
+    width: 400px;
+    margin-top: 20px;
+    height: 50px;
+    font-size: larger;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    border-color: none;
+    border-radius: 25px;
+}
+
