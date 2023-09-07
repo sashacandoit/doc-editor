@@ -6,9 +6,9 @@ import "./DocEditorForm.css"
 const songWords = employmentContractFields.words;
 console.log(songWords);
 
-const DocEditorForm = ({ getSongWords }) => {
+const DocEditorForm = ({ getDocWords }) => {
     /** Set initial state for form */
-    const [formData, setFormData] = useState(songWords);
+    const [formData, setFormData] = useState(docWords);
 
     /** handle form value change as user edits inputs */
     const handleChange = e => {
@@ -27,8 +27,8 @@ const DocEditorForm = ({ getSongWords }) => {
         e.preventDefault();
         let formWords = formData.map(field => field.value);
         console.log(formWords);
-        getSongWords(formWords)
-        setFormData(songWords);
+        getDocWords(formWords);
+        setFormData(docWords);
     };
 
     /** loop through list of words and generate form inputs */
@@ -50,9 +50,9 @@ const DocEditorForm = ({ getSongWords }) => {
     }
 
     return (
-        <form className="MadLibForm" onSubmit={handleSubmit}>
+        <form className="DocForm" onSubmit={handleSubmit}>
             {renderFields()}
-            <button className="MadLibForm-btn">Generate My MadLib!</button>
+            <button className="DocForm-btn">Generate Contract</button>
         </form>
         
     )

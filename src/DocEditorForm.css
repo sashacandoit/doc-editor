@@ -1,9 +1,9 @@
-.MadLibForm {
+.DocForm {
     width: 550px;
     float: left;
 }
 
-.MadLibForm-btn {
+.DocForm-btn {
     float: right;
     width: 400px;
     margin-top: 20px;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MadLibForm from "./DocEditorForm";
+import DocEditorForm from "./DocEditorForm";
 import EmploymentContract from "./EmploymentContract";
 import "./DocEditor.css"
 
@@ -13,9 +13,9 @@ const MadLib = () => {
     }
     return (
         <div className="MadLib">
-            <h1 className="MadLib-title">Rudolph the Madlibbed Reindeer</h1>
-            <h4 className="MadLib-subtitle">Fill in the blanks below to generate your song!</h4>
-            <MadLibForm getSongWords={getSongWords} />
+            <h1 className="Doc-title">Employment Contract</h1>
+            <h4 className="Doc-subtitle">Fill in the blanks below to add to the Employment Contract</h4>
+            <DocEditorForm getSongWords={getSongWords} />
             <EmploymentContract storyWords={words} />
         </div>
     )
